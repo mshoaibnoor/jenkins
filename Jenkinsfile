@@ -1,7 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage('maven build'){
+        stage('Build'){
             when{
                 branch 'dev'
             }
