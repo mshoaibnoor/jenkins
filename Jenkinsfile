@@ -4,9 +4,9 @@ pipeline{
         stage('Build'){
             when{
                 branch 'dev'
-            }
-            steps{
-                sh 'mvn -B -DskipTests clean package'
+                steps{
+                    sh 'mvn -B -DskipTests clean package'
+                }
             }
         }
         stage('Test') {
