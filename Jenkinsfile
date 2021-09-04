@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Build'){
             when{
-                branch 'dev'
+                branch 'main'
                 steps{
                     sh 'mvn -B -DskipTests clean package'
                 }
