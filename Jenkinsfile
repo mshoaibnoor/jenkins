@@ -4,7 +4,7 @@ pipeline{
         stage('checkout'){
             steps{
                 sh 'rm -rf *'
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/osmanshaikhSystemsltd/simple-java-maven-app.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/mshoaibnoor/jenkins.git']]])
             }
         }
         stage('maven build'){
