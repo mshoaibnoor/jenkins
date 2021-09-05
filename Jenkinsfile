@@ -26,5 +26,8 @@ pipeline{
                 }
             }
         }
+        stage('Deploy'){
+            sh 'java -Dserver.port=9000 -jar *.jar '
+        }
     }
 }
