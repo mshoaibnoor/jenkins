@@ -1,7 +1,7 @@
 // making change to test webhook auto trigger
 pipeline{
     agent {
-        label maven
+        label "jenkins-agent"
     }
     stages{
         stage('Build'){
