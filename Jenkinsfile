@@ -1,6 +1,6 @@
 // making change to test webhook auto trigger
 pipeline{
-    agent any
+    agent maven
     stages{
         stage('Build'){
                 steps{
